@@ -25,27 +25,26 @@ int main()
         {
             for (int j = 0; j < c; j++)
             {
+                if (i == j)
+                {
+                    continue;
+                }
                 if (i != j)
                 {
-                    if (arr[i][j] == 0)
+                    if (arr[i][j] != 0)
                     {
-                        count++;
-                    }
-                    else
-                    {
-                        count = 0;
-                        break;
+                        count = 1;
                     }
                 }
             }
         }
-        if (count >= 1)
+        if (count == 1)
         {
-            printf("It's a diagnonal matrix\n");
+            printf("It's not a diagnonal matrix\n");
         }
         else
         {
-            printf("It's not a diagnonal matrix\n");
+            printf("It's a diagnonal matrix\n");
         }
     }
     else
