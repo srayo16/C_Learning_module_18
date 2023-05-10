@@ -41,11 +41,11 @@ int main()
         }
         if (count == 1)
         {
-            printf("It's not a unit matrix\n");
+            printf("It's not a secondary unit matrix\n");
         }
         else
         {
-            printf("It's a unit matrix\n");
+            printf("It's a secondary unit matrix\n");
         }
     }
     else
